@@ -125,7 +125,7 @@ class _HomePageState extends State<HomePage> {
                             crossAxisCount: 2,
                             crossAxisSpacing: 12,
                             mainAxisSpacing: 12,
-                            childAspectRatio: 1,
+                            childAspectRatio: 0.4,
                           ),
                       itemCount: filteredFilms.length,
                       itemBuilder: (context, index) {
@@ -154,7 +154,7 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                   child: Image.network(
                                     f.imgUrl,
-                                    height: 580,
+                                    height: 280,
                                     width: double.infinity,
                                     fit: BoxFit.cover,
                                     errorBuilder:

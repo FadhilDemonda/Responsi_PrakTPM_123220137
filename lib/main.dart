@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/adapters.dart';
 // import 'package:responsi_123220137/pages/detail_page.dart';
 import 'package:responsi_123220137/pages/register_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -7,7 +9,11 @@ import 'pages/login_page.dart';
 import 'pages/home_page.dart';
 import 'pages/favorite_page.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Hive.initFlutter(); // Ini wajib, inisialisasi Hive untuk Flutter
+
   runApp(const MainApp());
 }
 

@@ -1,6 +1,6 @@
 name: responsi_123220137
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   hive: ^2.2.3
+  hive_flutter: ^1.1.0
   http: ^1.4.0
   logger: ^2.5.0
   shared_preferences: ^2.5.3
